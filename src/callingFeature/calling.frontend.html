@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Voice Call Demo</title>
+</head>
+<body>
+    <h1>WebRTC Voice Call with Call Button</h1>
+
+    <!-- Button to initiate the call -->
+    <button id="callButton">Start Call</button>
+
+    <!-- Audio element to play remote stream -->
+    <audio id="remoteAudio" autoplay></audio>
+
+    <script>
+        let localStream, remoteStream;
+        let localPeerConnection, remotePeerConnection;
+
+        // Get the "Start Call" button
+        const callButton = document.getElementById('callButton');
+
+        // Add event listener to the call button
+        callButton.addEventListener('click', startCall);
+
+        // Get local audio stream
+        async function getLocalStream() {
+            try {
+                localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                console.log('Local stream obtained');
+            } catch (e) {
+                console.log('Error accessing media devices.', e);
+            }
+        }
+
+        // Setting up peer connections (Simulate two users in one script for demo)
+        async function startCall() {
+            const configuration = { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
+            localPeerConnection = new RTCPeerConnection(configuration);
+            remotePeerConnection = new RTCPeerConnection(configuration);
+
+            // Handle ICE candidates (for real world scenario, exchange over a signaling server)
+            localPeerConnection.onicecandidate = e => {
+                if (e.candidate) {
+                    remotePeerConnection.addIceCandidate(e.candidate);
+                }
+            };
+            remotePeerConnection.onicecandidate = e => {
+                if (e.candidate) {
+                    localPeerConnection.addIceCandidate(e.candidate);
+                }
+            };
+
+            // Handle remote stream when it's received
+            remotePeerConnection.ontrack = event => {
+                document.getElementById('remoteAudio').srcObject = event.streams[0];
+            };
+
+            // Add local audio track to the peer connection
+            localStream.getTracks().forEach(track => localPeerConnection.addTrack(track, localStream));
+
+            // Create the offer (User A)
+            const offer = await localPeerConnection.createOffer();
+            await localPeerConnection.setLocalDescription(offer);
+            await remotePeerConnection.setRemoteDescription(offer);
+
+            // Create the answer (User B)
+            const answer = await remotePeerConnection.createAnswer();
+            await remotePeerConnection.setLocalDescription(answer);
+            await localPeerConnection.setRemoteDescription(answer);
+        }
+
+        // Start by getting the local stream when the page loads
+        getLocalStream();
+    </script>
+</body>
+</html>

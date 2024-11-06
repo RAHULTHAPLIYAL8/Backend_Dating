@@ -1,0 +1,202 @@
+{
+    "responses": [
+      {
+        "firstName": "Emily",
+        "lastName": "Johnson",
+        "dateOfBirth": "1992-05-14",
+        "timeOfBirth": "07:30 AM",
+        "placeOfBirth": "Los Angeles, California, USA",
+        "gender": "Female",
+        "height": "168 cm",
+        "interest" : "I love exploring new cultures and places, whether it's a weekend getaway or a trip abroad.",
+        "zodiacSign": "Taurus",
+        "currentLocation": {
+          "city": "Los Angeles",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Spanish"
+        ],
+        "race": "Caucasian"
+      },
+      {
+        "firstName": "Sophia",
+        "lastName": "Brown",
+        "dateOfBirth": "1996-02-22",
+        "timeOfBirth": "04:50 PM",
+        "placeOfBirth": "New York, New York, USA",
+        "gender": "Female",
+        "height": "162 cm",
+        "interest" : "Staying active is important to me, and I enjoy running, yoga, and hitting the gym.",
+        "zodiacSign": "Pisces",
+        "currentLocation": {
+          "city": "Brooklyn",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English"
+        ],
+        "race": "African American"
+      },
+      {
+        "firstName": "Ava",
+        "lastName": "Garcia",
+        "dateOfBirth": "1998-09-10",
+        "timeOfBirth": "11:25 AM",
+        "placeOfBirth": "Miami, Florida, USA",
+        "gender": "Female",
+        "height": "170 cm",
+        "interest" : "I'm passionate about cooking and love experimenting with new recipes, especially for friends and family.",
+        "zodiacSign": "Virgo",
+        "currentLocation": {
+          "city": "Miami",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Spanish"
+        ],
+        "race": "Hispanic"
+      },
+      {
+        "firstName": "Olivia",
+        "lastName": "Wong",
+        "dateOfBirth": "1993-07-04",
+        "timeOfBirth": "03:00 AM",
+        "placeOfBirth": "San Francisco, California, USA",
+        "gender": "Female",
+        "height": "164 cm",
+        "interest" : "I'm a huge music lover, whether it's going to live concerts or curating playlists for every mood.",
+        "zodiacSign": "Cancer",
+        "currentLocation": {
+          "city": "San Francisco",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Mandarin"
+        ],
+        "race": "Asian American"
+      },
+      {
+        "firstName": "Mia",
+        "lastName": "Nguyen",
+        "dateOfBirth": "1994-12-12",
+        "timeOfBirth": "01:40 PM",
+        "placeOfBirth": "Houston, Texas, USA",
+        "gender": "Female",
+        "height": "158 cm",
+        "interest" : "Hiking and being outdoors is my way of reconnecting with nature. Nothing beats a scenic trail.",
+        "zodiacSign": "Sagittarius",
+        "currentLocation": {
+          "city": "Houston",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Vietnamese"
+        ],
+        "race": "Asian American"
+      },
+      {
+        "firstName": "Harvey",
+        "lastName": "Specter",
+        "dateOfBirth": "1997-11-30",
+        "timeOfBirth": "06:45 AM",
+        "placeOfBirth": "Chicago, Illinois, USA",
+        "gender": "Male",
+        "height": "165 cm",
+        "interest" : "Capturing moments through photography is a big part of my life—especially nature and street photography",
+        "zodiacSign": "Sagittarius",
+        "currentLocation": {
+          "city": "Chicago",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "French"
+        ],
+        "race": "Caucasian"
+      },
+      {
+        "firstName": "James",
+        "lastName": "Martinez",
+        "dateOfBirth": "1990-01-16",
+        "timeOfBirth": "08:10 AM",
+        "placeOfBirth": "Phoenix, Arizona, USA",
+        "gender": "Male",
+        "height": "180 cm",
+        "interest" : "I'm an avid reader and love losing myself in books, especially mystery, science fiction, and biographies.",
+        "zodiacSign": "Capricorn",
+        "currentLocation": {
+          "city": "Phoenix",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Spanish"
+        ],
+        "race": "Hispanic"
+      },
+      {
+        "firstName": "William",
+        "lastName": "Clark",
+        "dateOfBirth": "1985-03-05",
+        "timeOfBirth": "09:00 AM",
+        "placeOfBirth": "Seattle, Washington, USA",
+        "gender": "Male",
+        "height": "183 cm",
+        "interest" : "I'm a movie buff and enjoy everything from indie films to binge-watching the latest TV series.",
+        "zodiacSign": "Pisces",
+        "currentLocation": {
+          "city": "Seattle",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English"
+        ],
+        "race": "Caucasian"
+      },
+      {
+        "firstName": "Michael",
+        "lastName": "Lee",
+        "dateOfBirth": "1991-08-18",
+        "timeOfBirth": "05:20 PM",
+        "placeOfBirth": "San Jose, California, USA",
+        "gender": "Male",
+        "height": "178 cm",
+        "interest" : "I'm into video games, especially RPGs and strategy games. It's a fun way to relax and unwind.",
+        "zodiacSign": "Leo",
+        "currentLocation": {
+          "city": "San Jose",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English",
+          "Korean"
+        ],
+        "race": "Asian American"
+      },
+      {
+        "firstName": "Christopher",
+        "lastName": "Jackson",
+        "dateOfBirth": "1987-11-29",
+        "timeOfBirth": "10:15 AM",
+        "placeOfBirth": "Atlanta, Georgia, USA",
+        "gender": "Male",
+        "height": "185 cm",
+        "interest" : "Giving back to the community through volunteering is something I'm passionate about. It keeps me grounded",
+        "zodiacSign": "Sagittarius",
+        "currentLocation": {
+          "city": "Atlanta",
+          "country": "USA"
+        },
+        "languagesSpoken": [
+          "English"
+        ],
+        "race": "African American"
+      }
+    ]
+  }
+  
